@@ -27,7 +27,18 @@
 ## 代码导航
 
 - Hive
+    - [ClientInfo.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hive/ClientInfo.java)
+    - [HiveJDBC.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hive/HiveJDBC.java)
 - HBase
+    - [HBaseOperation.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hbase/HBaseOperation.java)
+    - [Scanner.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hbase/Scanner.java)
+    - [WeatherBulkLoad.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hbase/WeatherBulkLoad.java)
 - Kafka
+    - [KafkaProperties.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/kafka/KafkaProperties.java)
+    - [Producer.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/kafka/Producer.java)
+    - [SimplePartitioner.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/kafka/SimplePartitioner.java) 
 - Crawl
+    - [WeatherCrawler.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/crawl/WeatherCrawler.java)
 - Flume
+    - [AsyncHBaseEventSerializerDemo.java](https://github.com/aikuyun/weather-mrs/blob/master/src/main/java/com/cuteximi/hbaseSink/AsyncHBaseEventSerializerDemo.java)
+- 更多...
