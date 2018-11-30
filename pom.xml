@@ -207,7 +207,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.cuteximi.crawl.WeatherCrawl</mainClass>
+                            <mainClass>com.cuteximi.crawl.WeatherCrawler</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
