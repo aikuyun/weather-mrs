@@ -1,7 +1,16 @@
 package com.cuteximi.hbaseSink;
 
+import com.google.common.base.Charsets;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.flume.Context;
+import org.apache.flume.Event;
+import org.apache.flume.conf.ComponentConfiguration;
+import org.apache.flume.sink.hbase.AsyncHbaseEventSerializer;
+import org.hbase.async.AtomicIncrementRequest;
+import org.hbase.async.PutRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @program: weathermrs

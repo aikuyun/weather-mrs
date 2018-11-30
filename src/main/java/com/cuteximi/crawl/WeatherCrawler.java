@@ -6,13 +6,29 @@ import java.sql.Connection;
 import java.util.Iterator;
 import java.util.Set;
 
+import com.cuteximi.hbase.HBaseOperation;
+import com.cuteximi.hive.ClientInfo;
+import com.cuteximi.hive.HiveJDBC;
+import com.cuteximi.web.DomTool;
+import com.cuteximi.kafka.Producer;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HBaseConfiguration;
+import org.apache.hadoop.hbase.TableName;
+import org.apache.http.impl.client.DefaultHttpClient;
+//import org.apache.kafka.clients.producer.Producer;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 /**
  * @program: weathermrs
  * @description: 爬取天气，以及建表，数据分发等
  * @author: TSL
  * @create: 2018-11-30 22:27
  **/
-public class WeatherCrawl {
+public class WeatherCrawler{
     private static final Log LOG = LogFactory.getLog(WeatherCrawler.class.getName());
     private static final int PROVINCE_TYPE = 1;
     private static final int ZONE_TYPE = 2;

@@ -3,6 +3,20 @@ package com.cuteximi.hbase;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HColumnDescriptor;
+import org.apache.hadoop.hbase.HTableDescriptor;
+import org.apache.hadoop.hbase.TableName;
+import org.apache.hadoop.hbase.client.Admin;
+import org.apache.hadoop.hbase.client.Connection;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.client.Table;
+import org.apache.hadoop.hbase.io.compress.Compression.Algorithm;
+import org.apache.hadoop.hbase.io.encoding.DataBlockEncoding;
+import org.apache.hadoop.hbase.util.Bytes;
 
 /**
  * @program: weathermrs
@@ -10,7 +24,7 @@ import java.util.List;
  * @author: TSL
  * @create: 2018-11-30 22:28
  **/
-public class HbaseOpration {
+public class HBaseOperation {
     private static final Log LOG = LogFactory.getLog(HBaseOperation.class.getName());
     private Configuration conf = null;
     private static Connection conn = null;

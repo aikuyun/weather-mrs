@@ -11,7 +11,7 @@ import java.util.Properties;
  * @author: TSL
  * @create: 2018-11-30 22:32
  **/
-public class ClinetInfo {
+public class ClientInfo {
     private String zkQuorum = null;
     private String auth = null;
     private String saslQop = null;
