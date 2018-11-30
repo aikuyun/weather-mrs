@@ -5,7 +5,7 @@
 ## 原始数据
 ![]()
 ## 数据结果
-![]()
+![](https://github.com/aikuyun/weather-mrs/blob/master/src/main/resources/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA.png)
 ## 解决方案
 1.先建立一张 Hbase 表。
 
@@ -20,7 +20,7 @@
 6.使用 Superset 统计和展示 Hive 中的表。
 
 ## 数据流
-![]()
+![](https://github.com/aikuyun/weather-mrs/blob/master/src/main/resources/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91.png原始数据.png)
 ## 代码导航
 
 - Hive
