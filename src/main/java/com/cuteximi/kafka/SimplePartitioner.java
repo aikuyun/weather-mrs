@@ -1,5 +1,8 @@
 package com.cuteximi.kafka;
 
+
+import kafka.utils.VerifiableProperties;
+
 /**
  * @program: weathermrs
  * @description: kafka 简单分区
@@ -11,8 +14,8 @@ public class SimplePartitioner {
     }
 
     public int partition(Object key, int numPartitions) {
-        int partition = false;
-        String partitionKey = (String) key;
+        //boolean partition = false;
+        String partitionKey = (String)key;
 
         int partition;
         try {

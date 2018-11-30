@@ -1,14 +1,17 @@
 package com.cuteximi.kafka;
 
 import java.util.Properties;
-
+import kafka.producer.KeyedMessage;
+import kafka.producer.ProducerConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * @program: weathermrs
  * @description: 生产者
  * @author: TSL
  * @create: 2018-11-30 22:34
  **/
-public class Producer {
+public class Producer extends Thread {
     private static final Logger LOG = LoggerFactory.getLogger(Producer.class);
     private final kafka.javaapi.producer.Producer<String, String> producer;
     private final String topic;
